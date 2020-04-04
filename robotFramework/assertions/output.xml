@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200323 16:57:25.646" rpa="false">
+<suite id="s1" name="Main" source="D:\testing\robotFramework\assertions\Main.robot">
+<test id="s1-t1" name="Keyword Should Exist">
+<kw name="Keyword Should Exist" library="BuiltIn">
+<doc>Fails unless the given keyword exists in the current scope.</doc>
+<arguments>
+<arg>Pass</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.673" endtime="20200323 16:57:25.673"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.672" endtime="20200323 16:57:25.673" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Length Should Be">
+<kw name="Length Should Be" library="BuiltIn">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>"one"</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200323 16:57:25.674" level="INFO">Length is 5</msg>
+<status status="PASS" starttime="20200323 16:57:25.674" endtime="20200323 16:57:25.674"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.674" endtime="20200323 16:57:25.675" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Pass Execution">
+<kw name="Pass Execution" library="BuiltIn">
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<arguments>
+<arg>Message</arg>
+</arguments>
+<msg timestamp="20200323 16:57:25.676" level="INFO">Execution passed with message:
+Message</msg>
+<status status="PASS" starttime="20200323 16:57:25.676" endtime="20200323 16:57:25.676"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.676" endtime="20200323 16:57:25.677" critical="yes">Message</status>
+</test>
+<test id="s1-t4" name="Empty">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<assign>
+<var>${var}</var>
+</assign>
+<msg timestamp="20200323 16:57:25.678" level="INFO">${var} = </msg>
+<status status="PASS" starttime="20200323 16:57:25.678" endtime="20200323 16:57:25.678"></status>
+</kw>
+<kw name="Should Be Empty" library="BuiltIn">
+<doc>Verifies that the given item is empty.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<msg timestamp="20200323 16:57:25.679" level="INFO">Length is 0</msg>
+<status status="PASS" starttime="20200323 16:57:25.678" endtime="20200323 16:57:25.679"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.678" endtime="20200323 16:57:25.679" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Equal">
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${2}</arg>
+<arg>${1 + 1}</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.680" endtime="20200323 16:57:25.680"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.680" endtime="20200323 16:57:25.682" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Equal As Integers">
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>${0}</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20200323 16:57:25.684" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20200323 16:57:25.683" endtime="20200323 16:57:25.684"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.683" endtime="20200323 16:57:25.684" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Equal As Numbers">
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>1.4</arg>
+<arg>1.123</arg>
+<arg>precision=0</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.685" endtime="20200323 16:57:25.685"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.685" endtime="20200323 16:57:25.686" critical="yes"></status>
+</test>
+<test id="s1-t8" name="Equal As Strings">
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>""</arg>
+<arg>"${EMPTY}"</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.687" endtime="20200323 16:57:25.687"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.687" endtime="20200323 16:57:25.687" critical="yes"></status>
+</test>
+<test id="s1-t9" name="True">
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>os.linesep</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.689" endtime="20200323 16:57:25.689"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.688" endtime="20200323 16:57:25.689" critical="yes"></status>
+</test>
+<test id="s1-t10" name="Contain">
+<kw name="Should Contain" library="BuiltIn">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>I</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.691" endtime="20200323 16:57:25.691"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.691" endtime="20200323 16:57:25.692" critical="yes"></status>
+</test>
+<test id="s1-t11" name="Contain Any">
+<kw name="Should Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` does not contain any of the ``*items``.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>aa</arg>
+<arg>bb</arg>
+<arg>cc</arg>
+<arg>dd</arg>
+<arg>ee</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.693" endtime="20200323 16:57:25.693"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.692" endtime="20200323 16:57:25.693" critical="yes"></status>
+</test>
+<test id="s1-t12" name="Contain X Times">
+<kw name="Should Contain X Times" library="BuiltIn">
+<doc>Fails if ``item1`` does not contain ``item2`` ``count`` times.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>See</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200323 16:57:25.695" level="INFO">Item found from the first item 1 time</msg>
+<status status="PASS" starttime="20200323 16:57:25.694" endtime="20200323 16:57:25.695"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.694" endtime="20200323 16:57:25.695" critical="yes"></status>
+</test>
+<test id="s1-t13" name="End With">
+<kw name="Should End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>Candy</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.697" endtime="20200323 16:57:25.697"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.696" endtime="20200323 16:57:25.697" critical="yes"></status>
+</test>
+<test id="s1-t14" name="Match">
+<kw name="Should Match" library="BuiltIn">
+<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>I*</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.701" endtime="20200323 16:57:25.701"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.699" endtime="20200323 16:57:25.701" critical="yes"></status>
+</test>
+<test id="s1-t15" name="Match Regexp">
+<kw name="Should Match Regexp" library="BuiltIn">
+<doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>^.*See.*$</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.703" endtime="20200323 16:57:25.703"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.703" endtime="20200323 16:57:25.704" critical="yes"></status>
+</test>
+<test id="s1-t16" name="Not Be Empty">
+<kw name="Should Not Be Empty" library="BuiltIn">
+<doc>Verifies that the given item is not empty.</doc>
+<arguments>
+<arg>" "</arg>
+</arguments>
+<msg timestamp="20200323 16:57:25.705" level="INFO">Length is 3</msg>
+<status status="PASS" starttime="20200323 16:57:25.705" endtime="20200323 16:57:25.706"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.705" endtime="20200323 16:57:25.706" critical="yes"></status>
+</test>
+<test id="s1-t17" name="Not Be Equal">
+<kw name="Should Not Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are equal.</doc>
+<arguments>
+<arg>""</arg>
+<arg>''</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.708" endtime="20200323 16:57:25.708"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.707" endtime="20200323 16:57:25.708" critical="yes"></status>
+</test>
+<test id="s1-t18" name="Not Be Equal As Integers">
+<kw name="Should Not Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are equal after converting them to integers.</doc>
+<arguments>
+<arg>${TRUE}</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20200323 16:57:25.711" level="INFO">Argument types are:
+&lt;class 'bool'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20200323 16:57:25.710" endtime="20200323 16:57:25.711"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.710" endtime="20200323 16:57:25.711" critical="yes"></status>
+</test>
+<test id="s1-t19" name="Not Be Equal As Numbers">
+<kw name="Should Not Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are equal after converting them to real numbers.</doc>
+<arguments>
+<arg>1</arg>
+<arg>${FALSE}</arg>
+<arg>precision=1</arg>
+</arguments>
+<msg timestamp="20200323 16:57:25.713" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;class 'bool'&gt;</msg>
+<status status="PASS" starttime="20200323 16:57:25.713" endtime="20200323 16:57:25.713"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.712" endtime="20200323 16:57:25.713" critical="yes"></status>
+</test>
+<test id="s1-t20" name="Not Be Equal As Strings">
+<kw name="Should Not Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are equal after converting them to strings.</doc>
+<arguments>
+<arg>" "</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.715" endtime="20200323 16:57:25.716"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.715" endtime="20200323 16:57:25.716" critical="yes"></status>
+</test>
+<test id="s1-t21" name="Not Be True">
+<kw name="Should Not Be True" library="BuiltIn">
+<doc>Fails if the given condition is true.</doc>
+<arguments>
+<arg>sys.platform == 'darwin'</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.719" endtime="20200323 16:57:25.719"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.718" endtime="20200323 16:57:25.719" critical="yes"></status>
+</test>
+<test id="s1-t22" name="Not Contain">
+<kw name="Should Not Contain" library="BuiltIn">
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>Stars</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.721" endtime="20200323 16:57:25.721"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.721" endtime="20200323 16:57:25.722" critical="yes"></status>
+</test>
+<test id="s1-t23" name="Not Contain Any">
+<kw name="Should Not Contain Any" library="BuiltIn">
+<doc>Fails if ``container`` contains one or more of the ``*items``.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>One</arg>
+<arg>Two</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.723" endtime="20200323 16:57:25.724"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.723" endtime="20200323 16:57:25.724" critical="yes"></status>
+</test>
+<test id="s1-t24" name="Not End With">
+<kw name="Should Not End With" library="BuiltIn">
+<doc>Fails if the string ``str1`` ends with the string ``str2``.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>Gum</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.726" endtime="20200323 16:57:25.726"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.725" endtime="20200323 16:57:25.727" critical="yes"></status>
+</test>
+<test id="s1-t25" name="Not Match">
+<kw name="Should Not Match" library="BuiltIn">
+<doc>Fails if the given ``string`` matches the given ``pattern``.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>You*</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.729" endtime="20200323 16:57:25.729"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.728" endtime="20200323 16:57:25.729" critical="yes"></status>
+</test>
+<test id="s1-t26" name="Not Match Regexp">
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>^Candy</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.731" endtime="20200323 16:57:25.732"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.730" endtime="20200323 16:57:25.732" critical="yes"></status>
+</test>
+<test id="s1-t27" name="Not Start With">
+<kw name="Should Not Start With" library="BuiltIn">
+<doc>Fails if the string ``str1`` starts with the string ``str2``.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>We</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.733" endtime="20200323 16:57:25.734"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.733" endtime="20200323 16:57:25.734" critical="yes"></status>
+</test>
+<test id="s1-t28" name="Start With">
+<kw name="Should Start With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not start with the string ``str2``.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+<arg>I</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.736" endtime="20200323 16:57:25.736"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.735" endtime="20200323 16:57:25.737" critical="yes"></status>
+</test>
+<test id="s1-t29" name="Variable Should Exist">
+<kw name="Variable Should Exist" library="BuiltIn">
+<doc>Fails unless the given variable exists within the current scope.</doc>
+<arguments>
+<arg>${SomeString}</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.738" endtime="20200323 16:57:25.739"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.738" endtime="20200323 16:57:25.739" critical="yes"></status>
+</test>
+<test id="s1-t30" name="Variable Should Not Exist">
+<kw name="Variable Should Not Exist" library="BuiltIn">
+<doc>Fails if the given variable exists within the current scope.</doc>
+<arguments>
+<arg>${example}</arg>
+</arguments>
+<status status="PASS" starttime="20200323 16:57:25.741" endtime="20200323 16:57:25.741"></status>
+</kw>
+<status status="PASS" starttime="20200323 16:57:25.740" endtime="20200323 16:57:25.742" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200323 16:57:25.649" endtime="20200323 16:57:25.743"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="30" fail="0">Critical Tests</stat>
+<stat pass="30" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="30" fail="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
